@@ -1,0 +1,86 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+.form {
+    background-color: deepskyblue;
+    text-align: center;
+    width: auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 36px;
+}
+
+input[type="text"], input[type="password"] {
+    font-size: 16px;
+    width: 300px;
+}
+
+:root {
+    --default-font-family: 'Open Sans', sans-serif;
+    --light-color: #f9f9f9; /*#2196f3;*/
+    --danger-color: #db3056;
+    --default-font-color: #555555; /*#fff;*/
+    --active-font-color: #2196f3; /*#ffa102;*/
+    --default-border-color: #555555; /*#fff;*/
+    --active-border-color: #2196f3; /*#ffa102;*/
+    --default-line-color: #ffa102;
+}
+
+* {
+    font-family: "Open Sans";
+}
+
+.buttons {
+    font-size: 16px;
+    width: 200px;
+}
+
+
+.usernameInput {
+    padding: 40px 0px 0px 0px;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.passwordInput {
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginControl {
+    grid-column: span 2;
+    padding: 20px 0px 40px 0px;
+}
+
+.resetUsernameInput, .resetPasswordInput {
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and ( min-width : 750px ) {
+    .loginForm {
+        display: block;
+    }
+
+
+    .loginControl {
+        grid-column: span 2;
+        padding: 0px 0px 40px 0px;
+    }
+
+    input[type="text"], input[type="password"] {
+        font-size: 16px;
+        width: 400px;
+    }
+}

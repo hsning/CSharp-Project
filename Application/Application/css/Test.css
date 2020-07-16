@@ -1,0 +1,260 @@
+﻿body {
+    text-align: center;
+}
+
+.TextboxDiv {
+    padding-left: 14px;
+}
+
+.Labels {
+    text-align: left;
+    padding-left: 14px;
+    font-weight: bold;
+}
+
+
+
+.indented0 {
+    padding-left: 30px;
+}
+
+.indented1 {
+    padding-left: 40px;
+}
+
+.whiteBack {
+    background-color: white;
+}
+
+.SearchDiv {
+    padding-top: 20px;
+}
+
+input[type=text], input[type=date] {
+    border-radius: 10px;
+    width: 150px;
+}
+
+select {
+    border-radius: 10px;
+    width: 120px;
+}
+
+input[type=number] {
+    border-radius: 10px;
+    width: 80px;
+}
+
+.formCategory {
+    background-color: deepskyblue;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 0px 5px 0px;
+    border: 1px solid black;
+    margin: 0px 10px 0px 10px;
+}
+
+.headerD {
+    height: 10%;
+    background-image: url('../Images/clouds-sky-header.jpg');
+    background-size: cover;
+    color: black;
+    padding: 0px 0px 0px 0px;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.formSection {
+}
+
+.sectionDiv {
+    margin: 20px 0px 0px 0px;
+    font-weight: bold;
+}
+
+.medicationDose {
+    margin: 0px 0px 20px 0px;
+    padding-left: 2px;
+}
+
+.submitDiv {
+    text-align: left;
+    padding-left: 15px;
+}
+
+.ConsentSection, .DemographicSection, .RFSection {
+    padding: 8px 8px 8px 8px;
+}
+
+.footer {
+    padding-top: 30px;
+}
+
+fieldset {
+    margin-top: 20px;
+    border: 2px deepskyblue solid;
+    border-radius: 30px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0px 10px 0px 10px;
+    font-size: 26px;
+}
+
+.visitForm {
+    margin: 10px 11px 30px 11px;
+}
+
+.indented1 {
+    padding-left: 70px;
+}
+
+.indented0 {
+    padding-left: 30px;
+}
+
+.rdbCV {
+    padding-left: 16px;
+}
+
+.OtherCKB {
+    padding-left: 10px;
+}
+
+.redList li {
+    color: red;
+}
+
+.AddFUPSubmitDiv {
+    padding-left: 5px;
+}
+
+.RFCV {
+    padding-left: 15px;
+}
+
+@media screen and ( min-width : 750px ) {
+    .ConsentSection, .DemographicSection, .RFSection {
+        display: grid;
+        grid-template-columns: 450px auto;
+        padding: 8px 8px 8px 8px;
+    }
+
+    .Labels {
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    .Controls {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 20px;
+    }
+
+    tr {
+        text-align: initial;
+    }
+
+    .FloatingLabels {
+        padding: 8px 8px 8px 8px;
+    }
+
+    .headerD {
+        height: 10%;
+        background-image: url('../Images/clouds-sky-header.jpg');
+        background-size: cover;
+        color: black;
+        padding: 0px 0px 0px 0px;
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+    }
+
+    .SpanTwo {
+        grid-column: span 2;
+    }
+
+
+    .DosageTextBox {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .GridView {
+        width: 100%;
+    }
+
+    .mediumSectionDiv {
+        margin: 20px 0px 0px 0px;
+    }
+
+
+    .TextboxDiv {
+        padding-left: 33px;
+    }
+
+    .submitDiv {
+        display: grid;
+        text-align: left;
+        padding-left: 56px;
+        grid-template-columns: 450px auto;
+    }
+
+
+
+
+    input[type=number] {
+        border-radius: 10px;
+        width: 80px;
+    }
+
+    #bootstrap-overrides th {
+        text-align: center;
+    }
+
+    .SearchDiv {
+        padding-top: 20px;
+    }
+
+    .visitForm {
+        margin: 10px 11px 30px 11px;
+    }
+
+    .formCategory {
+        background-color: deepskyblue;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 5px 0px 5px 0px;
+        border: 1px solid black;
+        margin: 0px 10px 0px 10px;
+    }
+
+    .hdlDateDiv {
+        padding-bottom: 20px;
+    }
+
+    .footer {
+        padding-top: 30px;
+    }
+
+    .AddFUPfooter {
+        padding-left: 10px;
+    }
+
+    .AddFUPSubmitDiv {
+        text-align: left;
+    }
+
+    .OtherCKB {
+        padding-left: 30px;
+    }
+
+    .labAssessment {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+    }
+
+    .RFCV {
+        padding-left: 35px;
+    }
+}

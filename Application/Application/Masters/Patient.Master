@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Patient.master.cs" Inherits="Application.Masters.Patient1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+
+    <title></title>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <link href="../css/Test.css" rel="stylesheet" />
+    <link href="../css/Master.css" rel="stylesheet" />
+    <script>
+        $(function () {
+            $('a').each(function () {
+                if ($(this).prop('href') == window.location.href) {
+                    $(this).parent(".menuItems").css("background-color", "#00bfff");
+                    $(this).parent(".menuItems").css("color", "#2196f3");
+                    $(this).parent(".menuItems").css("border", "1px solid #2196f3");
+                }
+            });
+        });
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" method="post" class="form">
+        <div class="customContainer">
+            <div class="headerD" style="width: 100%;">
+                <div class="leftHeader">
+                    <div style="text-align: left; display: flex;">
+                        <asp:HyperLink ID="titleHyperLink" runat="server" CssClass="titleBar" NavigateUrl="~/Dashboard.aspx">Application</asp:HyperLink>
+                    </div>
+                </div>
+                <div class="rightHeader">
+                </div>
+            </div>
+            <div class="belowHeader">
+                <div class="menu target collapse">
+                    <div class="menuTitle">
+                        <asp:Label ID="welcomeLabel" runat="server" Text="Welcome"></asp:Label>
+                    </div>
+                    <div class="menuItems">
+                        <a href="Consent"><span class="spanLink">Consent</span></a>
+                    </div>
+                    <div class="menuItems">
+                        <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click" CausesValidation="False"><span class="spanLink">Logout</span></asp:LinkButton>
+                    </div>
+
+                </div>
+                <div class="main">
+
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                    <div class="footer">
+                        &copy 2020 Application
+                    </div> 
+                </div>
+            </div>
+
+        </div>
+        <div>
+        </div>
+    </form>
+</body>
+</html>
